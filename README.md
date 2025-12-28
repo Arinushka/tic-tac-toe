@@ -1,27 +1,26 @@
-# Tic-Tac-Toe Game
+# Крестики-Нолики
 
-An interactive tic-tac-toe game with unlimited grid size, built with React 18, TypeScript, and Material-UI.
+Интерактивная игра в крестики-нолики с неограниченным размером поля, созданная с использованием React 19, TypeScript и Material-UI.
 
-## Features
+## Особенности
 
-### 🎮 Game Features
-- **Unlimited Grid**: Board expands dynamically as you play
-- **5-in-a-Row Win Detection**: Connect 5 symbols in any direction to win
-- **Turn-based Gameplay**: Alternating X and O moves
-- **AI Opponent**: Play against a computer opponent with adjustable difficulty
-- **Real-time Win Detection**: Automatic winner detection after each move
+### 🎮 Игровые возможности
+- **Неограниченное поле**: Доска расширяется динамически по мере игры
+- **Победа 5-в-ряд**: Соедините 5 символов в любом направлении для победы
+- **Пошаговый геймплей**: Чередование ходов X и O
+- **Обнаружение победы в реальном времени**: Автоматическое определение победителя после каждого хода
 
-### 🎨 User Interface
-- **Modern Design**: Clean, responsive interface built with Material-UI
-- **Animations**: Smooth move animations and win celebrations
-- **Responsive Layout**: Works on desktop, tablet, and mobile devices
-- **Dark/Light Theme**: Consistent theming throughout the app
+### 🎨 Пользовательский интерфейс
+- **Современный дизайн**: Чистый, адаптивный интерфейс, созданный с помощью Material-UI
+- **Анимации**: Плавные анимации ходов и празднования побед
+- **Адаптивная верстка**: Работает на десктопе, планшете и мобильных устройствах
+- **Тема**: Последовательное оформление в стиле Material Design
 
-### 📊 Statistics & History
-- **Match History**: Complete game history with dates and results
-- **Player Statistics**: Win/loss/draw statistics for all players
-- **Match Replay**: Rewind and replay completed matches move-by-move
-- **Local Storage**: All data persists locally in the browser
+### 📊 Статистика и история
+- **История матчей**: Полная история игр с датами и результатами
+- **Статистика игроков**: Статистика побед/поражений/ничьих для всех игроков
+- **Повтор матчей**: Перемотка и повтор завершенных матчей ход за ходом
+- **Локальное хранилище**: Все данные сохраняются локально в браузере
 
 ### 🛠️ Technical Features
 - **TypeScript**: Full type safety throughout the application
@@ -30,103 +29,100 @@ An interactive tic-tac-toe game with unlimited grid size, built with React 18, T
 - **Custom Hooks**: Game state management with React hooks
 - **Local Storage API**: Client-side data persistence
 
-## Tech Stack
+## Технологии
 
-- **Frontend**: React 18 with TypeScript
-- **UI Library**: Material-UI (MUI)
-- **Routing**: React Router DOM
-- **State Management**: React Context + useReducer
-- **Styling**: Material-UI + CSS-in-JS
-- **Data Storage**: Browser LocalStorage
-- **Build Tool**: Create React App
+- **Frontend**: React 19 с TypeScript
+- **UI библиотека**: Material-UI (MUI)
+- **Маршрутизация**: React Router DOM
+- **Управление состоянием**: React Context + useReducer
+- **Стилизация**: Material-UI + CSS-in-JS
+- **Хранение данных**: Browser LocalStorage
+- **Сборщик**: Create React App
 
-## Getting Started
+## Как собрать и запустить проект локально
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
+### Системные требования
+- Node.js (версии 16 или выше)
+- npm или yarn
 
-### Installation
+### Установка
 
-1. Clone the repository:
+1. Клонируйте репозиторий:
 ```bash
 git clone <repository-url>
 cd tic-tac-toe
 ```
 
-2. Install dependencies:
+2. Установите зависимости:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+3. Запустите сервер разработки:
 ```bash
 npm start
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-### Available Scripts
+### Доступные скрипты
 
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App (irreversible)
+- `npm start` - Запускает приложение в режиме разработки
+- `npm test` - Запускает тестовый раннер
+- `npm run build` - Собирает приложение для продакшена
+- `npm run eject` - Извлекает из Create React App (необратимо)
 
-## Game Rules
+## Правила игры
 
-1. **Objective**: Get 5 of your symbols (X or O) in a row - horizontally, vertically, or diagonally
-2. **Turns**: Players alternate placing their symbols on empty grid cells
-3. **Grid**: The board expands automatically as you play, with no size limits
-4. **Win Condition**: First player to connect 5 symbols wins
-5. **AI Mode**: Choose to play against a computer opponent
+1. **Цель**: Получить 5 своих символов (X или O) в ряд - горизонтально, вертикально или по диагонали
+2. **Ходы**: Игроки по очереди размещают свои символы на пустых клетках сетки
+3. **Поле**: Доска расширяется автоматически по мере игры, без ограничений размера
+4. **Условие победы**: Первый игрок, соединивший 5 символов, побеждает
 
-## Project Structure
+## Структура проекта
 
 ```
 src/
 ├── components/
-│   ├── pages/          # Page components (Login, Game, History)
-│   ├── game/           # Game-specific components (Board, Replay)
-│   └── common/         # Shared components
-├── hooks/              # Custom React hooks
-├── services/           # API and storage services
-├── types/              # TypeScript type definitions
-├── utils/              # Utility functions and algorithms
-└── App.tsx             # Main application component
+│   ├── pages/          # Компоненты страниц (авторизация, игра, история)
+│   ├── game/           # Игровые компоненты (доска, повтор)
+│   └── common/         # Общие компоненты
+├── hooks/              # Пользовательские React хуки
+├── services/           # Сервисы API и хранения данных
+├── types/              # Определения типов TypeScript
+├── utils/              # Вспомогательные функции и алгоритмы
+└── App.tsx             # Основной компонент приложения
 ```
 
-## Key Components
+## Основные компоненты
 
-- **LoginPage**: Player name input and game setup
-- **GamePage**: Main game interface with board and controls
-- **HistoryPage**: Match history and statistics display
-- **GameBoard**: Interactive game board with unlimited scrolling
-- **MatchReplay**: Move-by-move match replay functionality
+- **LoginPage**: Ввод имен игроков и настройка игры
+- **GamePage**: Основной игровой интерфейс с доской и элементами управления
+- **HistoryPage**: Отображение истории матчей и статистики
+- **GameBoard**: Интерактивная игровая доска с неограниченной прокруткой
+- **MatchReplay**: Функционал повтора матчей ход за ходом
 
-## Algorithms
+## Алгоритмы
 
-- **Win Detection**: Efficient 5-in-a-row detection in all directions
-- **AI Logic**: Minimax-based AI with difficulty levels
-- **Board Management**: Dynamic board bounds calculation and rendering
+- **Обнаружение победы**: Эффективное обнаружение 5-в-ряд во всех направлениях
+- **Управление полем**: Динамический расчет границ поля и рендеринг
 
-## Future Enhancements
+## Будущие улучшения
 
-- Online multiplayer mode
-- Additional AI difficulty levels
-- Customizable win conditions
-- Tournament mode
-- Sound effects and more animations
-- Cloud save functionality
+- Онлайн режим для нескольких игроков
+- Настраиваемые условия победы
+- Турнирный режим
+- Звуковые эффекты и дополнительные анимации
+- Сохранение в облаке
 
-## Contributing
+## Вклад в проект
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
+1. Форкните репозиторий
+2. Создайте ветку для новой функции
+3. Внесите свои изменения
+4. Запустите тесты и линтинг
+5. Отправьте pull request
 
-## License
+## Лицензия
 
-This project is licensed under the MIT License.
+Этот проект лицензирован под MIT License.
